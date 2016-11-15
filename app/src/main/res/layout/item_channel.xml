@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:layout_margin="5dp">
+    <TextView
+        android:background="@drawable/tuoyuan"
+        android:id="@+id/tv_pd"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="频道"
+        android:textSize="12sp"
+        android:gravity="center"/>
+</LinearLayout>

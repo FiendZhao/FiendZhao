@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--侧滑栏内容-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_menu"
+    android:layout_gravity="start"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="230dp"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <!--山水动画-->
+        <com.example.zsq.mynews.water.WaterScreenView
+            android:id="@+id/waterScreenView"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/water_scene_background"/>
+        <!--头像-->
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:gravity="center">
+            <com.example.zsq.mynews.view.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:id="@+id/civ"
+                android:onClick="login"
+                android:src="@mipmap/morentouxiang"/>
+            <TextView
+                android:id="@+id/tv_djdl"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="点击头像登录"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        style="@style/chlstyle">
+        <ImageView
+            android:background="@mipmap/chl_yjms"
+            style="@style/chlstyle_img" />
+        <TextView
+            android:id="@+id/tv_yjms"
+            android:paddingLeft="30dp"
+            android:text="夜间模式"
+            android:onClick="setZhuTi"
+            style="@style/chlstyle_tv" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+    <RelativeLayout
+        style="@style/chlstyle">
+        <ImageView
+            android:background="@mipmap/chl_gy"
+            style="@style/chlstyle_img" />
+        <TextView
+            android:id="@+id/tv_gy"
+            android:text="关于"
+            android:onClick="guanyu"
+            android:paddingLeft="30dp"
+            style="@style/chlstyle_tv"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+        <TextView
+            android:id="@+id/tv_sz"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="设置"
+            android:textColor="@color/subscribe_item_pressed_stroke_night"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_zxdl"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:text="注销"
+            android:visibility="gone"
+            android:onClick="logout"
+            android:textColor="@color/subscribe_item_pressed_stroke_night"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

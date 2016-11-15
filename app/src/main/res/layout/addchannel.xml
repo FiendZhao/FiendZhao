@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50e4e4df"
+    android:id="@+id/activity_addchannel">
+    <LinearLayout
+        android:background="@color/toolbar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_addchannelfh"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="返回"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:text="频道"
+            android:paddingLeft="18dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_width="70dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="(单击增删频道)"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <TextView
+        android:text="已添加频道"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/recyclerViewAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c9c9c9"/>
+    <TextView
+        android:text="未添加频道"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/recyclerViewRemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

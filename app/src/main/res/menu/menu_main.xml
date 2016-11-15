@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--showAsAction:-->
+    <!--1.always:这个值会使菜单项一直显示在Action Bar上-->
+    <!--2.ifRoom:如果有足够的空间，这个值会使菜单项显示在Action Bar上-->
+    <!--3.never:这个值使菜单项永远都不出现在Action Bar上-->
+    <!--4.withText:这个值使菜单项和图标，菜单文本一起显示-->
+    <!--<item-->
+        <!--android:id="@+id/action_edit"-->
+        <!--android:icon="@drawable/action_search"-->
+        <!--android:orderInCategory="80"-->
+        <!--android:title="action_edit"-->
+        <!--app:showAsAction="ifRoom"/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_share"-->
+        <!--android:icon="@mipmap/ic_launcher"-->
+        <!--android:orderInCategory="90"-->
+        <!--android:title="action_share"-->
+        <!--app:showAsAction="ifRoom"/>-->
+    <item
+        android:id="@+id/action_overflow"
+        android:icon="@drawable/ic_drawer"
+        android:orderInCategory="100"
+        android:title="action_overflow"
+        app:showAsAction="withText"/>
+</menu>

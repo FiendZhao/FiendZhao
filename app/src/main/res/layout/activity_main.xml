@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/ll_zt"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    >
+    <!--标题栏-->
+    <include layout="@layout/toolbar"/>
+    <!--侧滑栏-->
+    <include layout="@layout/drawerlayout_listview"/>
+
+</LinearLayout>
+
